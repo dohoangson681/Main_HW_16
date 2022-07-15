@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <title>HW Buoi 16</title>
+</head>
+<body>
+    <h1 class="text-center text-primary my-5">Bài tập JS buổi 6</h1>
+    <div class="row container mx-auto">
+        <div class="col-3">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <!-- bài 1  -->
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#bai1" role="tab" aria-controls="v-pills-home" aria-selected="true">Bài 1</a>
+            <!-- bài 2  -->
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#bai2" role="tab" aria-controls="v-pills-profile" aria-selected="false">Bài 2</a>
+            <!-- bài 3  -->
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#bai3" role="tab" aria-controls="v-pills-messages" aria-selected="false">Bài 3</a>
+            <!-- bài 4  -->
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#bai4" role="tab" aria-controls="v-pills-settings" aria-selected="false">Bài 4</a>
+            <!-- bài 5  -->
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#bai5" role="tab" aria-controls="v-pills-settings" aria-selected="false">Bài 5</a>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <!-- bài 1  -->
+            <div class="tab-pane fade show active" id="bai1" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <h3 class="text-center text-success">Tìm số nguyên dương nhỏ nhất sao cho 1 + ... + n > 1000</h3>
+                
+                <button type="button" id="btnBai1" class="btn btn-primary my-4">Xem kết quả</button>
+                <h3 id="resultBai1" class="text-success mt-5"></h3>
+            </div>
+            <!-- bài 2  -->
+            <div class="tab-pane fade" id="bai2" role="tabpanel">
+                <h3 class="text-success">Tính tổng S(n) = x + x^2 + .. + x^n</h3>
+                <form >
+                    <label for="inputX">Cin >> </label>
+                    <input type="number" id="inputX"
+                    placeholder="Nhập vào số x"> <br>
+                    <label for="inputN">Cin >> </label>
+                    <input type="number" id="inputN" placeholder="Nhập vào số n"> <br>
+                    <button type="button" id="btnBai2" class="btn btn-dark my-4">Xem kết quả</button>
+                </form>
+                <h3 class="text-success ">Res</h3>
+            </div>
+            <!-- bài 3  -->
+            <div class="tab-pane fade" id="bai3" role="tabpanel" >Bài 3</div>
+            <!-- bài 4  -->
+            <div class="tab-pane fade" id="bai4" role="tabpanel" >Bài 4</div>
+            <!-- bài 5  -->
+            <div class="tab-pane fade" id="bai5" role="tabpanel" >Bài 5</div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    <!-- bs4  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./js/bai1.js"></script>
+    <script src="./js/bai2.js"></script>
+    <script src="./js/bai3.js"></script>
+    <script src="./js/bai4.js"></script>
+    <script src="./js/bai5.js"></script>
+</body>
+</html>
