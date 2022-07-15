@@ -8,6 +8,7 @@ function resultB2(x , n) {
         sum += Sum(x , i) ; 
     }
     console.log(sum) ; 
+    document.getElementById("resultBai2").innerHTML = "S(n) = " + sum ; 
 }
 function Sum(x , n) {
     return Math.pow(x,n) ; 
