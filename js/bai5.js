@@ -18,6 +18,7 @@ function showRes(x) {
     }
 }
 function check(x) {
+    if(n < 2) return false ; 
     for(var i = 2 ; i*i <= x ; i++){
         if(x % i == 0) return false ;
     }
